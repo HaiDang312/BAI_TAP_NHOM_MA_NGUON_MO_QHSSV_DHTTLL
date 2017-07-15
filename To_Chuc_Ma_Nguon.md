@@ -5,7 +5,8 @@ Cách đặt tên dễ hiểu, dễ nhớ còn giúp bạn “nhẹ đầu” h�
 Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ làm việc theo chuẩn sau:
 
 **+ Tổ chức lập trình:** Chúng ta xẻ triển khai dự án theo mô hình 3 lớp.
-	- ** Preject DTO:** DTO chứa các Class đại diện cho các đối tượng được lưu trữ trong Database.
+
+** Preject DTO:** DTO chứa các Class đại diện cho các đối tượng được lưu trữ trong Database.
 	
 	- Ví du Clas DTO_Lop:
 	
@@ -46,7 +47,7 @@ Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ l�
 			}
 		}
     
-	- ** Preject DAL:** DAL chứa các Class và các Class này có chức năng giao tiếp với hệ quản trị CSDL như thực hiện các công việc liên quan đến lưu trữ và truy vấn dữ liệu ( tìm kiếm, thêm, xóa, sửa,…).
+** Preject DAL:** DAL chứa các Class và các Class này có chức năng giao tiếp với hệ quản trị CSDL như thực hiện các công việc liên quan đến lưu trữ và truy vấn dữ liệu ( tìm kiếm, thêm, xóa, sửa,…).
 	
 	- Ví du Clas Dal_Lop:
 		
@@ -105,7 +106,7 @@ Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ l�
 			}
 		}
 
-	- ** Preject BUS:** BUS chứa các Class là cầu nối giửa DTO và DAL
+** Preject BUS:** BUS chứa các Class là cầu nối giửa DTO và DAL
 	
 	- Ví du Clas BUS_Lop:
 	
@@ -141,4 +142,4 @@ Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ l�
 			}
 		}
 
-	-** Preject GUI:** GUI là nơi có nhiệm vụ chính giao tiếp với người dùng. Nó gồm các thành phần giao diện và thực hiện các công việc như nhập liệu, hiển thị dữ liêu, kiểm tra tính đúng đắn dữ liệu trước khi gọi lớp BLL.
+** Preject GUI:** GUI là nơi có nhiệm vụ chính giao tiếp với người dùng. Nó gồm các thành phần giao diện và thực hiện các công việc như nhập liệu, hiển thị dữ liêu, kiểm tra tính đúng đắn dữ liệu trước khi gọi lớp BLL.
