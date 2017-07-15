@@ -6,7 +6,7 @@ Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ l�
 
 ## **+ Tổ chức lập trình:** Chúng ta xẻ triển khai dự án theo mô hình 3 lớp.
 
-**Preject DTO:** DTO chứa các Class đại diện cho các đối tượng được lưu trữ trong Database.
+**-Preject DTO:** DTO chứa các Class đại diện cho các đối tượng được lưu trữ trong Database.
 	
 Ví du Class DTO_Lop:
 	
