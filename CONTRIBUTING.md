@@ -1,3 +1,5 @@
+# NGUYÊN TẮC ĐÓNG GÓP
+
 - Các thành viên tích cực đóng góp cho dự án của mình hoàn chỉnh.
 - Dự án có thành công hay không dựa trên chính sự tích cực của bạn.
 - Các thành viên đóng góp ý kiến cần đi sát với yêu cầu cũng như mục tiêu của dự án.
