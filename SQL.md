@@ -3,6 +3,7 @@
 CREATE DATABASE QLHSSV_TTLL;
 
 use QLHSSV_TTLL
+
 go
 
 	Create table DANGNHAP
