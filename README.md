@@ -12,4 +12,3 @@ Chức Năng Ứng Dụng Quản Lí Hồ Sơ Sinh Viên Trường Đại Học 
 
 - Tra Cứu Điểm của từng sinh viên.
 
-- 
