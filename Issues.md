@@ -1,4 +1,4 @@
-# - Danh Sách lỗi:
+# -Danh Sách lỗi:
 	
 	+ Cơ sở dữ liệu được ghép nối từ các thành viên không chính xác dẫn đến lỗi (đã fix).
 
