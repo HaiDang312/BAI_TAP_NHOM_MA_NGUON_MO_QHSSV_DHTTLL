@@ -4,7 +4,7 @@
 Cách đặt tên dễ hiểu, dễ nhớ còn giúp bạn “nhẹ đầu” hơn khi phải đọc lại code của chính mình.
 Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ làm việc theo chuẩn sau:
 
-**+ Tổ chức lập trình:** Chúng ta xẻ triển khai dự án theo mô hình 3 lớp.
+##**+ Tổ chức lập trình:** Chúng ta xẻ triển khai dự án theo mô hình 3 lớp.
 
 **Preject DTO:** DTO chứa các Class đại diện cho các đối tượng được lưu trữ trong Database.
 	
