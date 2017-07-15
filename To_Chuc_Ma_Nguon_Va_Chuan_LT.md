@@ -1,4 +1,4 @@
-# THÔNG TIN TỔ CHỨC MÃ NGUỒN
+# THÔNG TIN TỔ CHỨC MÃ NGUỒN VÀ CHUẨN LẬP TRÌNH
 
 Để thống nhất và tuân thủ quy tắc đặt tên sẽ giúp dễ dàng quản lý project của mình, tăng khả năng sử dụng lại code, thuận tiện trong việc trao đổi với nhóm, dễ dàng mở rộng nhóm. 
 Cách đặt tên dễ hiểu, dễ nhớ còn giúp bạn “nhẹ đầu” hơn khi phải đọc lại code của chính mình.
