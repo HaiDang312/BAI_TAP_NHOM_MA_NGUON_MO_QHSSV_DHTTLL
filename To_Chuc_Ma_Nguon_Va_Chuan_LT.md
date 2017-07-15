@@ -143,8 +143,9 @@ Ví du Class BUS_Lop:
 		}
 
 **- Preject GUI:** GUI là nơi có nhiệm vụ chính giao tiếp với người dùng. Nó gồm các thành phần giao diện và thực hiện các công việc như nhập liệu, hiển thị dữ liêu, kiểm tra tính đúng đắn dữ liệu trước khi gọi lớp BLL.
-## ** + Chuẩn lập trình:** Chúng ta xẻ dùng quy tắc Camel để đặt tên hàm và biến trong chương trình
+##  + Chuẩn lập trình: Chúng ta xẻ dùng quy tắc Camel để đặt tên hàm và biến trong chương trình
 ** Quy tắc Camel:** Chữ cái đầu tiên của từ đầu tiên viết thường. Các từ còn lại viết hoa chữ cái đầu tiên.
+	
 Ví dụ:
 		namespace DTO
 		{
