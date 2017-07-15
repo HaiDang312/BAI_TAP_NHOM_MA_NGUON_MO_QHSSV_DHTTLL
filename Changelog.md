@@ -1,4 +1,4 @@
-# -Changelog(11072017):
+## -Changelog(11072017):
 
   + Initial release: Bắt đầu phất hành chương trình gồm các form Sinh Viên, Khoa, lớp các chức năng thêm, sửa, xóa, tìm kiếm.
 
