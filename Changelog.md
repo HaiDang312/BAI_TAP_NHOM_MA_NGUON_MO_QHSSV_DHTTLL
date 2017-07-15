@@ -1,6 +1,6 @@
 ## - Changelog(11072017):
 
-  + Initial release: Bắt đầu phất hành chương trình gồm các form Sinh Viên, Khoa, lớp các chức năng thêm, sửa, xóa, tìm kiếm.
+  + Initial release: Bắt đầu phát hành chương trình gồm các form Sinh Viên, Khoa, lớp các chức năng thêm, sửa, xóa, tìm kiếm.
 
   + Update form  Khen thưởng và kỉ luật với các chức năng thêm, sửa, xóa.
   
