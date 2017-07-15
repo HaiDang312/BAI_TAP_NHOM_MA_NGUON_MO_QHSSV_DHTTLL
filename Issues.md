@@ -11,3 +11,5 @@
 	+ Lỗi Khi nhập trùng các thông tin là khóa chính.
 
 	  VD: Khi truy vấn thêm một sinh viên nếu nhập trùng mã sinh viên đã có chương trình sẽ lỗi.
+	  
+	+ Lỗi khi không nhập đầy đủ thông tin.
