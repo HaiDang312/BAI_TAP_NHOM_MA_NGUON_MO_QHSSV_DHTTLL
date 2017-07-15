@@ -1,0 +1,5 @@
+E:\DB2\QLHSSV_DHTTLL\DTO\bin\Debug\DTO.dll
+E:\DB2\QLHSSV_DHTTLL\DTO\bin\Debug\DTO.pdb
+E:\DB2\QLHSSV_DHTTLL\DTO\obj\Debug\DTO.dll
+E:\DB2\QLHSSV_DHTTLL\DTO\obj\Debug\DTO.pdb
+E:\DB2\QLHSSV_DHTTLL\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLHSSV_TTLLDataSet" targetNamespace="http://tempuri.org/QLHSSV_TTLLDataSet.xsd" xmlns:mstns="http://tempuri.org/QLHSSV_TTLLDataSet.xsd" xmlns="http://tempuri.org/QLHSSV_TTLLDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLHSSV_TTLLConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLHSSV_TTLLConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GUI.Properties.Settings.GlobalReference.Default.QLHSSV_TTLLConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHUYENNGANHTableAdapter" GeneratorDataComponentClassName="CHUYENNGANHTableAdapter" Name="CHUYENNGANH" UserDataComponentName="CHUYENNGANHTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLHSSV_TTLLConnectionString (Settings)" DbObjectName="QLHSSV_TTLL.dbo.CHUYENNGANH" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TENNGANH FROM dbo.CHUYENNGANH</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TENNGANH" DataSetColumn="TENNGANH" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KHOATableAdapter" GeneratorDataComponentClassName="KHOATableAdapter" Name="KHOA" UserDataComponentName="KHOATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLHSSV_TTLLConnectionString (Settings)" DbObjectName="QLHSSV_TTLL.dbo.KHOA" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TENKHOA FROM dbo.KHOA</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TENKHOA" DataSetColumn="TENKHOA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LOPTableAdapter" GeneratorDataComponentClassName="LOPTableAdapter" Name="LOP" UserDataComponentName="LOPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLHSSV_TTLLConnectionString (Settings)" DbObjectName="QLHSSV_TTLL.dbo.LOP" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TENLOP FROM dbo.LOP</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TENLOP" DataSetColumn="TENLOP" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SINHVIENTableAdapter" GeneratorDataComponentClassName="SINHVIENTableAdapter" Name="SINHVIEN" UserDataComponentName="SINHVIENTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLHSSV_TTLLConnectionString (Settings)" DbObjectName="QLHSSV_TTLL.dbo.SINHVIEN" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[SINHVIEN] WHERE (([MASV] = @Original_MASV) AND ([HOSV] = @Original_HOSV) AND ([TENSV] = @Original_TENSV) AND ([NGAYSINH] = @Original_NGAYSINH) AND ([GIOITINH] = @Original_GIOITINH) AND ([DIACHI] = @Original_DIACHI) AND ([HEDAOTAO] = @Original_HEDAOTAO))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MASV" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MASV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_HOSV" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HOSV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TENSV" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TENSV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_NGAYSINH" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NGAYSINH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_GIOITINH" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="GIOITINH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DIACHI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DIACHI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_HEDAOTAO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HEDAOTAO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MASV, HOSV, TENSV, NGAYSINH, GIOITINH, DIACHI, HEDAOTAO FROM dbo.SINHVIEN</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[SINHVIEN] SET [MASV] = @MASV, [HOSV] = @HOSV, [TENSV] = @TENSV, [NGAYSINH] = @NGAYSINH, [GIOITINH] = @GIOITINH, [DIACHI] = @DIACHI, [HEDAOTAO] = @HEDAOTAO WHERE (([MASV] = @Original_MASV) AND ([HOSV] = @Original_HOSV) AND ([TENSV] = @Original_TENSV) AND ([NGAYSINH] = @Original_NGAYSINH) AND ([GIOITINH] = @Original_GIOITINH) AND ([DIACHI] = @Original_DIACHI) AND ([HEDAOTAO] = @Original_HEDAOTAO));
+SELECT MASV, HOSV, TENSV, NGAYSINH, GIOITINH, DIACHI, HEDAOTAO FROM SINHVIEN WHERE (MASV = @MASV)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@MASV" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MASV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@HOSV" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HOSV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TENSV" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TENSV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@NGAYSINH" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NGAYSINH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@GIOITINH" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="GIOITINH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DIACHI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DIACHI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HEDAOTAO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HEDAOTAO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_MASV" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MASV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_HOSV" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="HOSV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TENSV" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TENSV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_NGAYSINH" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NGAYSINH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_GIOITINH" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="GIOITINH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_DIACHI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DIACHI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_HEDAOTAO" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HEDAOTAO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MASV" DataSetColumn="MASV" />
+              <Mapping SourceColumn="HOSV" DataSetColumn="HOSV" />
+              <Mapping SourceColumn="TENSV" DataSetColumn="TENSV" />
+              <Mapping SourceColumn="NGAYSINH" DataSetColumn="NGAYSINH" />
+              <Mapping SourceColumn="GIOITINH" DataSetColumn="GIOITINH" />
+              <Mapping SourceColumn="DIACHI" DataSetColumn="DIACHI" />
+              <Mapping SourceColumn="HEDAOTAO" DataSetColumn="HEDAOTAO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLHSSV_TTLLDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLHSSV_TTLLDataSet" msprop:Generator_UserDSName="QLHSSV_TTLLDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CHUYENNGANH" msprop:Generator_TableClassName="CHUYENNGANHDataTable" msprop:Generator_TableVarName="tableCHUYENNGANH" msprop:Generator_RowChangedName="CHUYENNGANHRowChanged" msprop:Generator_TablePropName="CHUYENNGANH" msprop:Generator_RowDeletingName="CHUYENNGANHRowDeleting" msprop:Generator_RowChangingName="CHUYENNGANHRowChanging" msprop:Generator_RowEvHandlerName="CHUYENNGANHRowChangeEventHandler" msprop:Generator_RowDeletedName="CHUYENNGANHRowDeleted" msprop:Generator_RowClassName="CHUYENNGANHRow" msprop:Generator_UserTableName="CHUYENNGANH" msprop:Generator_RowEvArgName="CHUYENNGANHRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENNGANH" msprop:Generator_ColumnVarNameInTable="columnTENNGANH" msprop:Generator_ColumnPropNameInRow="TENNGANH" msprop:Generator_ColumnPropNameInTable="TENNGANHColumn" msprop:Generator_UserColumnName="TENNGANH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KHOA" msprop:Generator_TableClassName="KHOADataTable" msprop:Generator_TableVarName="tableKHOA" msprop:Generator_RowChangedName="KHOARowChanged" msprop:Generator_TablePropName="KHOA" msprop:Generator_RowDeletingName="KHOARowDeleting" msprop:Generator_RowChangingName="KHOARowChanging" msprop:Generator_RowEvHandlerName="KHOARowChangeEventHandler" msprop:Generator_RowDeletedName="KHOARowDeleted" msprop:Generator_RowClassName="KHOARow" msprop:Generator_UserTableName="KHOA" msprop:Generator_RowEvArgName="KHOARowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENKHOA" msprop:Generator_ColumnVarNameInTable="columnTENKHOA" msprop:Generator_ColumnPropNameInRow="TENKHOA" msprop:Generator_ColumnPropNameInTable="TENKHOAColumn" msprop:Generator_UserColumnName="TENKHOA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LOP" msprop:Generator_TableClassName="LOPDataTable" msprop:Generator_TableVarName="tableLOP" msprop:Generator_RowChangedName="LOPRowChanged" msprop:Generator_TablePropName="LOP" msprop:Generator_RowDeletingName="LOPRowDeleting" msprop:Generator_RowChangingName="LOPRowChanging" msprop:Generator_RowEvHandlerName="LOPRowChangeEventHandler" msprop:Generator_RowDeletedName="LOPRowDeleted" msprop:Generator_RowClassName="LOPRow" msprop:Generator_UserTableName="LOP" msprop:Generator_RowEvArgName="LOPRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENLOP" msprop:Generator_ColumnVarNameInTable="columnTENLOP" msprop:Generator_ColumnPropNameInRow="TENLOP" msprop:Generator_ColumnPropNameInTable="TENLOPColumn" msprop:Generator_UserColumnName="TENLOP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SINHVIEN" msprop:Generator_TableClassName="SINHVIENDataTable" msprop:Generator_TableVarName="tableSINHVIEN" msprop:Generator_RowChangedName="SINHVIENRowChanged" msprop:Generator_TablePropName="SINHVIEN" msprop:Generator_RowDeletingName="SINHVIENRowDeleting" msprop:Generator_RowChangingName="SINHVIENRowChanging" msprop:Generator_RowEvHandlerName="SINHVIENRowChangeEventHandler" msprop:Generator_RowDeletedName="SINHVIENRowDeleted" msprop:Generator_RowClassName="SINHVIENRow" msprop:Generator_UserTableName="SINHVIEN" msprop:Generator_RowEvArgName="SINHVIENRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MASV" msprop:Generator_ColumnVarNameInTable="columnMASV" msprop:Generator_ColumnPropNameInRow="MASV" msprop:Generator_ColumnPropNameInTable="MASVColumn" msprop:Generator_UserColumnName="MASV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HOSV" msprop:Generator_ColumnVarNameInTable="columnHOSV" msprop:Generator_ColumnPropNameInRow="HOSV" msprop:Generator_ColumnPropNameInTable="HOSVColumn" msprop:Generator_UserColumnName="HOSV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENSV" msprop:Generator_ColumnVarNameInTable="columnTENSV" msprop:Generator_ColumnPropNameInRow="TENSV" msprop:Generator_ColumnPropNameInTable="TENSVColumn" msprop:Generator_UserColumnName="TENSV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NGAYSINH" msprop:Generator_ColumnVarNameInTable="columnNGAYSINH" msprop:Generator_ColumnPropNameInRow="NGAYSINH" msprop:Generator_ColumnPropNameInTable="NGAYSINHColumn" msprop:Generator_UserColumnName="NGAYSINH" type="xs:dateTime" />
+              <xs:element name="GIOITINH" msprop:Generator_ColumnVarNameInTable="columnGIOITINH" msprop:Generator_ColumnPropNameInRow="GIOITINH" msprop:Generator_ColumnPropNameInTable="GIOITINHColumn" msprop:Generator_UserColumnName="GIOITINH" type="xs:boolean" />
+              <xs:element name="DIACHI" msprop:Generator_ColumnVarNameInTable="columnDIACHI" msprop:Generator_ColumnPropNameInRow="DIACHI" msprop:Generator_ColumnPropNameInTable="DIACHIColumn" msprop:Generator_UserColumnName="DIACHI">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEDAOTAO" msprop:Generator_ColumnVarNameInTable="columnHEDAOTAO" msprop:Generator_ColumnPropNameInRow="HEDAOTAO" msprop:Generator_ColumnPropNameInTable="HEDAOTAOColumn" msprop:Generator_UserColumnName="HEDAOTAO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SINHVIEN" />
+      <xs:field xpath="mstns:MASV" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
