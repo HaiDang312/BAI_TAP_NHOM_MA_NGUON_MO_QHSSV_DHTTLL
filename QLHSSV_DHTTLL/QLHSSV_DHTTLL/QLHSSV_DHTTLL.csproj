@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1535742-4EB2-4732-9EC5-7E19C824445A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLHSSV_DHTTLL</RootNamespace>
+    <AssemblyName>QLHSSV_DHTTLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dsKhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dsKhenThuong.Designer.cs">
+      <DependentUpon>dsKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dsKyLuat.Designer.cs">
+      <DependentUpon>dsKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSSVKhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSSVKhenThuong.Designer.cs">
+      <DependentUpon>DSSVKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSSVKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSSVKyLuat.Designer.cs">
+      <DependentUpon>DSSVKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhenThuong_KyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhenThuong_KyLuat.Designer.cs">
+      <DependentUpon>KhenThuong_KyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QTKhenThuong_KyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QTKhenThuong_KyLuat.Designer.cs">
+      <DependentUpon>QTKhenThuong_KyLuat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dsKhenThuong.resx">
+      <DependentUpon>dsKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dsKyLuat.resx">
+      <DependentUpon>dsKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSSVKhenThuong.resx">
+      <DependentUpon>DSSVKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSSVKyLuat.resx">
+      <DependentUpon>DSSVKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhenThuong_KyLuat.resx">
+      <DependentUpon>KhenThuong_KyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QTKhenThuong_KyLuat.resx">
+      <DependentUpon>QTKhenThuong_KyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{15f96b1a-9aad-4071-aa93-24bf056409cc}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{ad540e37-3a94-4b94-9cd7-5d26d0e17333}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{f5ce1f6e-6fd7-4bd0-8301-c582230db109}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Untitled-1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
