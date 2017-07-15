@@ -44,7 +44,9 @@ Làm tương tự với các form còn lại.
 
 ## -Trả lời: Ta làm như sau:
 - Ta viết code trực tiếp cho radial button
-         textbox1.ReadOnly = true;
+
+         txtNgayHH.ReadOnly = true;
+         
 - Trong đó: 
-    textbox1 là textbox mà bạn muốn đặt chế độ chỉ đọc
+    txtNgayHH là textbox mà bạn muốn đặt chế độ chỉ đọc
     <p><img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t34.0-12/20136698_852612421555286_379781211_n.png?oh=bf0db357b830b7b68a564fded8318a00&oe=596C92AB"></p>
