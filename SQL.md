@@ -100,7 +100,7 @@ go
 	NGAYKT date not null,
 	constraint PK2 primary key (MASV, MAKT, NGAYKT),
 	)
-
+	
 	create table KYLUAT
 	(
 	MAKL varchar(8) primary key not null,
