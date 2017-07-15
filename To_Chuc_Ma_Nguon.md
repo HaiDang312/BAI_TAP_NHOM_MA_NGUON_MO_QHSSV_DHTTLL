@@ -8,7 +8,7 @@ Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ l�
 
 **Preject DTO:** DTO chứa các Class đại diện cho các đối tượng được lưu trữ trong Database.
 	
-	- Ví du Clas DTO_Lop:
+Ví du Clas DTO_Lop:
 	
 		namespace DTO
 		{
@@ -49,7 +49,7 @@ Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ l�
     
 **Preject DAL:** DAL chứa các Class và các Class này có chức năng giao tiếp với hệ quản trị CSDL như thực hiện các công việc liên quan đến lưu trữ và truy vấn dữ liệu ( tìm kiếm, thêm, xóa, sửa,…).
 	
-	- Ví du Clas Dal_Lop:
+Ví du Clas Dal_Lop:
 		
 		namespace DAL
 		{
@@ -108,7 +108,7 @@ Thì các thành viên trong nhóm chúng xẻ thống nhất với nhau xẻ l�
 
 **Preject BUS:** BUS chứa các Class là cầu nối giửa DTO và DAL
 	
-	- Ví du Clas BUS_Lop:
+Ví du Clas BUS_Lop:
 	
 		namespace BUS
 		{
