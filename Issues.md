@@ -13,3 +13,5 @@
 	  VD: Khi truy vấn thêm một sinh viên nếu nhập trùng mã sinh viên đã có chương trình sẽ lỗi.
 	  
 	+ Lỗi khi không nhập đầy đủ thông tin.
+	
+	+Lỗi không sửa được thông tin sinh viên trong SQL
