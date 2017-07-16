@@ -1,6 +1,6 @@
 ## - Changelog(15072017):
 
-  + Update form  Đối tượng, sv đối tượng.
+  + Update form   sv đối tượng.
 
   + Update các chức năng thêm, sửa, xóa, tìm kiếm.
 
