@@ -1,0 +1,14 @@
+D:\QLHSSV_DHTTLL\DAL\bin\Debug\DAL.dll
+D:\QLHSSV_DHTTLL\DAL\bin\Debug\DAL.pdb
+D:\QLHSSV_DHTTLL\DAL\bin\Debug\DTO.dll
+D:\QLHSSV_DHTTLL\DAL\bin\Debug\DTO.pdb
+D:\QLHSSV_DHTTLL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\QLHSSV_DHTTLL\DAL\obj\Debug\DAL.dll
+D:\QLHSSV_DHTTLL\DAL\obj\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\QLHSSV_DHTTLL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\QLHSSV_DHTTLL\DAL\obj\Debug\DAL.dll
+C:\Users\Administrator\Desktop\QLHSSV_DHTTLL\DAL\obj\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\QLHSSV_DHTTLL\DAL\bin\Debug\DAL.dll
+C:\Users\Administrator\Desktop\QLHSSV_DHTTLL\DAL\bin\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\QLHSSV_DHTTLL\DAL\bin\Debug\DTO.dll
+C:\Users\Administrator\Desktop\QLHSSV_DHTTLL\DAL\bin\Debug\DTO.pdb
