@@ -26,4 +26,4 @@
 
 # III.	Sơ đồ thực thể - quan hệ (ERD)
 
-<p><img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t35.0-12/20138135_696387147212790_1298186770_o.png?oh=5329800639246ea9ec6f1ae47e7480b4&oe=596CA982"></p>
+<p><img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t35.0-12/20138135_696387147212790_1298186770_o.png?oh=5329800639246ea9ec6f1ae47e7480b4&oe=596CA982"></p> 
