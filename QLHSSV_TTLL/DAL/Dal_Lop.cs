@@ -14,6 +14,7 @@ namespace DAL
         SqlDataAdapter adap;
         DataTable dt;
 
+        // In danh sách lớp 
         public DataTable LOP()
         {
             adap = new SqlDataAdapter("SELECT * FROM LOP", dbConn);
@@ -22,6 +23,8 @@ namespace DAL
             dbConn.Close();
             return dt;
         }
+
+        // In danh sách khoa
         public DataTable Khoa_DS()
         {
             string cmd = "SELECT * FROM KHOA";
@@ -30,8 +33,9 @@ namespace DAL
             adap.Fill(dt);
             return dt;
         }
- 
-        public bool  themLop(DTO_Lop pLop)
+        
+        // Thêm lớp 
+        public bool  themLop(DTO_Lop pLop) // Tao đối tượng pLop 
         {
             dbConn.Open();
             string cmd = "INSERT INTO LOP VALUES(N'" + pLop.MaLop + "',N'" + pLop.TenLop + "',N'" + pLop.MaKhoa + "')";
@@ -40,6 +44,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // Sửa lớp
         public bool suaLop(DTO_Lop pLop)
         {
             dbConn.Open();
@@ -49,6 +55,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // Xóa lớp
         public bool xoaLop(String maLop)
         {
             dbConn.Open();

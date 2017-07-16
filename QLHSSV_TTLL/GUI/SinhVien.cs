@@ -17,7 +17,7 @@ namespace GUI
 {
     public partial class SinhVien : Form
     {
-        BUS_SinhVien sv = new BUS_SinhVien();
+        BUS_SinhVien sv = new BUS_SinhVien(); // Tạo đối tượng sv
         public SinhVien()
         {
             InitializeComponent();
@@ -35,20 +35,20 @@ namespace GUI
 
         private void dsSinhVien_Load(object sender, EventArgs e)
         {
-            comboLop.DataSource = sv.Lop();
-            comboLop.DisplayMember = "TENLOP";
+            comboLop.DataSource = sv.Lop(); // gọi hàm lớp bên BUS_SinhVien
+            comboLop.DisplayMember = "TENLOP"; // Hiện tên lớp ra comboLop
             comboLop.ValueMember = "MALOP";
             comboLop.SelectedIndex = -1;
             comboLop.Text = "[Chọn lớp ...]";
 
-            comboKhoa.DataSource = sv.Khoa();
-            comboKhoa.DisplayMember = "TENKHOA";
+            comboKhoa.DataSource = sv.Khoa(); // gọi hàm khoa bên BUS_SinhVien
+            comboKhoa.DisplayMember = "TENKHOA"; // Hiện tên khoa ra comboLop
             comboKhoa.ValueMember = "MAKHOA";
             comboKhoa.SelectedIndex = -1;
             comboKhoa.Text = "[ Chọn khoa ...]";
 
-            comboNganh.DataSource = sv.Nganh();
-            comboNganh.DisplayMember = "TENNGANH";
+            comboNganh.DataSource = sv.Nganh(); // gọi hàm ngành bên BUS_SinhVien
+            comboNganh.DisplayMember = "TENNGANH"; // Hiện tên ngành ra comboLop
             comboNganh.ValueMember = "MANGANH";
             comboNganh.SelectedIndex = -1;
             comboNganh.Text = "[Chọn ngành ...]"; 
@@ -64,14 +64,15 @@ namespace GUI
              
             try
             {
-            bool gt = true;
+            bool gt = true; // tao biện giới tính gán đúng thi là nam
 
-            if (radNam.Checked)
-                gt = true;
+            if (radNam.Checked) // kiểm tra 
+                gt = true; 
             else
                 gt = false;
 
             bool dv = true;
+
             if (radDVCO.Checked)
                 dv = true;
             else
@@ -82,10 +83,10 @@ namespace GUI
                 dt = true;
             else
                 dt = false;
-
+                // tạo đối tương sinh viên với các thuộc tính được người dùng nhập vào ở giao diện
                 DTO_SinhVien SinhVien = new DTO_SinhVien(txtMaSV.Text, txtHoSV.Text, txtTenSV.Text, comboLop.SelectedValue.ToString(), comboKhoa.SelectedValue.ToString(), comboNganh.SelectedValue.ToString(), txtNgaySinh.Text, gt.ToString(), txtDiaChi.Text, dv.ToString(), txtNgayVaoDoan.Text, txtNoiKetnap.Text, txtSoCMND.Text, txtNgayCap.Text, txtNoiCap.Text, dt.ToString(), txtNamtuyenSinh.Text, txtDanToc.Text);
-                sv.themSV(SinhVien);
-                lbThongBao.Text = "Thêm thành công";
+                sv.themSV(SinhVien); // Gọi hàm thêm bên BUS_SinhVien
+                lbThongBao.Text = "Thêm thành công"; // Thông báo 
             }
             catch
             {
@@ -158,7 +159,7 @@ namespace GUI
 
         private void btnXemTT_Click(object sender, EventArgs e)
         {
-            ThongTinSinhVien f = new ThongTinSinhVien();
+            ThongTinSinhVien f = new ThongTinSinhVien(); // gọi tới giao diện thông tin sinh viên
             f.Show();
         }
     }

@@ -18,13 +18,15 @@ namespace GUI
     {
 
 
-        BUS_Lop bus_lop = new BUS_Lop();
+        BUS_Lop bus_lop = new BUS_Lop(); // Tạo đối tượng kết nối
  
 
         public Lop()
         {
             InitializeComponent();
         }
+
+        // Tạo hàm binding khi người dùng kich vào đối tượng nào đó ở data thi nó xẽ hiện thông tin lên các textbox
         private void binding()
         {
             txtMaLop.DataBindings.Clear();
@@ -38,19 +40,19 @@ namespace GUI
         {
 
             
-            comKhoa.DataSource = bus_lop.KHOA();
-            comKhoa.DisplayMember = "TenKhoa";
+            comKhoa.DataSource = bus_lop.KHOA(); // Gọi hàm khoa bên BUS_Lop
+            comKhoa.DisplayMember = "TenKhoa";  // Hiên tên lớp lên comboKhoa
             comKhoa.ValueMember = "MaKhoa";
 
-            dataGridView1.DataSource = bus_lop.LOP();
+            dataGridView1.DataSource = bus_lop.LOP(); // Hiện danh sách lớp lên data
             dataGridView1.Columns[0].HeaderText = "Mã lớp";
             dataGridView1.Columns[1].HeaderText = "Tên lớp";
             dataGridView1.Columns[2].HeaderText = "Mã khoa";
-
+             // Quy định đọ rong của các ô trong data
             dataGridView1.Columns[0].Width = 70;
             dataGridView1.Columns[1].Width = 250;
             dataGridView1.Columns[2].Width =70;
-
+            
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.Width = this.ClientSize.Width;
@@ -64,11 +66,11 @@ namespace GUI
         {    
             try
             { 
-            DTO_Lop Lop = new DTO_Lop(txtMaLop.Text, txtTenLop.Text, comKhoa.SelectedValue.ToString());
-            bus_lop.themLop(Lop);
-            txtMaLop.Text = "";
-            txtTenLop.Text = "";
-            this.Lop_Load(sender, e);
+                DTO_Lop Lop = new DTO_Lop(txtMaLop.Text, txtTenLop.Text, comKhoa.SelectedValue.ToString());  // Tạo đối tượng Lop với các thược tính mà người dungfnhapj vào ở giao diện
+                bus_lop.themLop(Lop); // gọi hàm them lớp bên BUS_Lop
+                txtMaLop.Text = "";
+                txtTenLop.Text = "";
+                this.Lop_Load(sender, e);
             }
             catch
             {
@@ -80,11 +82,11 @@ namespace GUI
         {         
             try
             { 
-            DTO_Lop Lop = new DTO_Lop(txtMaLop.Text, txtTenLop.Text, comKhoa.SelectedValue.ToString());
-            bus_lop.suaLop(Lop);
-            txtMaLop.Text = "";
-            txtTenLop.Text = "";
-            this.Lop_Load(sender, e);
+                DTO_Lop Lop = new DTO_Lop(txtMaLop.Text, txtTenLop.Text, comKhoa.SelectedValue.ToString());
+                bus_lop.suaLop(Lop);
+                txtMaLop.Text = "";
+                txtTenLop.Text = "";
+                this.Lop_Load(sender, e);
             }
             catch
             {
@@ -96,10 +98,10 @@ namespace GUI
         {     
             try
             { 
-            bus_lop.xoaLop(txtMaLop.Text);
-            txtMaLop.Text = "";
-            txtTenLop.Text = "";
-            this.Lop_Load(sender, e);
+                bus_lop.xoaLop(txtMaLop.Text);
+                txtMaLop.Text = "";
+                txtTenLop.Text = "";
+                this.Lop_Load(sender, e);
             }
             catch
             {

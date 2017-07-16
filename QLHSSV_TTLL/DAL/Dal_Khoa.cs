@@ -11,19 +11,21 @@ namespace DAL
 {
     public class Dal_Khoa:connect
     {
-        SqlDataAdapter adap;
+        SqlDataAdapter adap; 
         DataTable dt;
-
+         
+        // In danh sách Khoa
         public DataTable Khoa_DS()
         {
-            string cmd = "SELECT * FROM KHOA";
+            string cmd = "SELECT * FROM KHOA"; // câu lệnh truy vấn
             adap = new SqlDataAdapter(cmd, dbConn);
             dt = new DataTable();
             adap.Fill(dt);
             return dt;
         }
 
-        public bool themKhoa(DTO_Khoa pKhoa)
+        // Thêm đối tượng vào bảng khoa
+        public bool themKhoa(DTO_Khoa pKhoa) // Tạo đối tượng pKhoa
         {
             dbConn.Open();
             string cmd = "INSERT INTO KHOA VALUES(N'" + pKhoa.MaKhoa + "',N'" + pKhoa.TenKhoa + "')";
@@ -32,6 +34,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // Sửa đối tượng bảng khoa
         public bool suaKhoa(DTO_Khoa pKhoa)
         {
             dbConn.Open();
@@ -41,6 +45,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // Xóa đối tượng bảng khoa
         public bool xoaKhoa(String maKhoa)
         {
             dbConn.Open();

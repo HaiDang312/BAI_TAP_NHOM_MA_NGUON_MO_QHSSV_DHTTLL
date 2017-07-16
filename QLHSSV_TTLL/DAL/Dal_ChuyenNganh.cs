@@ -15,6 +15,7 @@ namespace DAL
         SqlDataAdapter adap;
         DataTable dt;
 
+        // in danh sách Ngành
         public DataTable Nganh()
         {
             string cmd = "SELECT * FROM CHUYENNGANH";
@@ -24,6 +25,7 @@ namespace DAL
             return dt;
         }
 
+        // Thêm ngành
         public bool themNganh(DTO_ChuyenNganh pNganh)
         {
             dbConn.Open();
@@ -33,6 +35,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // sửa ngành
         public bool suaNganh(DTO_ChuyenNganh pNganh)
         {
             dbConn.Open();
@@ -42,6 +46,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // xóa ngành
         public bool xoaNganh(String maNganh)
         {
             dbConn.Open();
@@ -52,6 +58,7 @@ namespace DAL
             return true;
         }
 
+        // in danh sách sinh viên ngành
         public DataTable SinhVien_DS()
         {
             string cmd = "SELECT SINHVIEN.MASV, HOSV+' '+ TENSV as [Họ Tên SV], TENNGANH, TENLOP, TENKHOA, CASE WHEN GIOITINH='1' THEN 'Nam' ELSE 'Nữ' END ,NGAYSINH,DIACHI FROM SINHVIEN,LOP,KHOA,CHUYENNGANH  WHERE (SINHVIEN.MALOP=LOP.MALOP) and (SINHVIEN.MAKHOA=KHOA.MAKHOA) and (SINHVIEN.MANGANH=CHUYENNGANH.MANGANH)";
@@ -60,6 +67,7 @@ namespace DAL
             adap.Fill(dt);
             return dt;
         }
+        // in danh sách sinh viên theo từng ngành
         public DataTable SinhVien_DSLop(String maNganh)
         {
             string cmd = "SELECT SINHVIEN.MASV, HOSV +' '+ TENSV as [Họ Tên SV], TENNGANH, LOP.TENLOP, TENKHOA, CASE WHEN GIOITINH='1' THEN 'Nam' ELSE 'Nữ' END ,NGAYSINH,DIACHI FROM SINHVIEN,LOP,KHOA,CHUYENNGANH  WHERE (SINHVIEN.MALOP=LOP.MALOP) and (SINHVIEN.MAKHOA=KHOA.MAKHOA) and (SINHVIEN.MANGANH = CHUYENNGANH.MANGANH) and CHUYENNGANH.MANGANH='" + maNganh + "'";

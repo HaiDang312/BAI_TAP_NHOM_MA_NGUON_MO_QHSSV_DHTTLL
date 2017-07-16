@@ -14,6 +14,7 @@ namespace DAL
         SqlDataAdapter adap;
         DataTable dt;
 
+        // In danh sách sinh viên
         public DataTable SinhVien()
         {
             adap = new SqlDataAdapter("SELECT MASV,HOSV,TENSV,MALOP,MAKHOA,MANGANH,NGAYSINH,CASE WHEN GIOITINH='1' THEN 'Nam' ELSE 'Nữ' END ,DIACHI,CASE WHEN DOANVIEN='1' THEN 'Có' ELSE 'Không' END, NGAYVD, NOIKETNAP,SOCMND,NGAYCAP,NOICAP,HEDAOTAO,NAMTUYENSINH,DANTOC FROM SINHVIEN", dbConn);
@@ -22,6 +23,8 @@ namespace DAL
             dbConn.Close();
             return dt;
         }
+
+        // in danh sách lớp
         public DataTable Lop()
         {
             string cmd = "SELECT * FROM LOP";
@@ -30,6 +33,7 @@ namespace DAL
             adap.Fill(dt);
             return dt;
         }
+        // inh danh sạch khoa
         public DataTable Khoa()
         {
             string cmd = "SELECT * FROM KHOA";
@@ -38,6 +42,8 @@ namespace DAL
             adap.Fill(dt);
             return dt;
         }
+
+        // In danh sách ngành
         public DataTable Nganh()
         {
             string cmd = "SELECT * FROM CHUYENNGANH";
@@ -46,6 +52,8 @@ namespace DAL
             adap.Fill(dt);
             return dt;
         }
+
+        // Thêm đối tượng sinh viên 
         public bool themSV(DTO_SinhVien sv)
         {
             dbConn.Open();
@@ -55,6 +63,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // Sửa đối tượng sinh viên
         public bool suaSV(DTO_SinhVien sv)
         {
             dbConn.Open();
@@ -64,6 +74,8 @@ namespace DAL
             dbConn.Close();
             return true;
         }
+
+        // Xóa sinh viên theo mã sinh viên
         public bool xoaSV(String maSV)
         {
             dbConn.Open();
