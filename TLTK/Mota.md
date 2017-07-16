@@ -65,3 +65,21 @@
 - SV_DOITUONG ( MADT, MASV).
 
 <p><img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t34.0-12/20120731_853073034842558_56044844_n.png?oh=3b35e71bae5569e77c8ec60d993fe23a&oe=596CD67A"></p>
+
+## Chuyên Ngành
+
+- CHUYENNGANH ( MANGANH, TENNGANH ).
+
+<p><img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t34.0-12/20120962_853076151508913_175257674_n.png?oh=f8e02069d7988eed52aa72f5ca0aa96d&oe=596DEC98"></p>
+
+## Môn Học
+
+- MONHOC ( MAMH, TENMH, SOTIET ).
+
+<p><img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t34.0-12/20117539_853076871508841_1860398127_n.png?oh=c28f7b746339faced20603b704d65fc6&oe=596CC69E"></p>
+
+## Điểm
+
+- MONHOC ( MASV, MAMH, HOCKY, DIEM ).
+
+<p><img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t34.0-12/20120795_853077118175483_1465778530_n.png?oh=2035775949ae241f39dfb129f57ac972&oe=596CE778"></p>
