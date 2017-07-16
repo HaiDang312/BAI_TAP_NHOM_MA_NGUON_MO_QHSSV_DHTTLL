@@ -1,0 +1,5 @@
+D:\QLHSSV_DHTTLL_Vuong\DTO\bin\Debug\DTO.dll
+D:\QLHSSV_DHTTLL_Vuong\DTO\bin\Debug\DTO.pdb
+D:\QLHSSV_DHTTLL_Vuong\DTO\obj\Debug\DTO.dll
+D:\QLHSSV_DHTTLL_Vuong\DTO\obj\Debug\DTO.pdb
+D:\QLHSSV_DHTTLL_Vuong\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

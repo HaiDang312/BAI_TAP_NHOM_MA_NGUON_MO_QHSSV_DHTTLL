@@ -1,0 +1,9 @@
+D:\QLHSSV_DHTTLL_Vuong\BUS\bin\Debug\BUS.dll
+D:\QLHSSV_DHTTLL_Vuong\BUS\bin\Debug\BUS.pdb
+D:\QLHSSV_DHTTLL_Vuong\BUS\bin\Debug\DAL.dll
+D:\QLHSSV_DHTTLL_Vuong\BUS\bin\Debug\DTO.dll
+D:\QLHSSV_DHTTLL_Vuong\BUS\bin\Debug\DAL.pdb
+D:\QLHSSV_DHTTLL_Vuong\BUS\bin\Debug\DTO.pdb
+D:\QLHSSV_DHTTLL_Vuong\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\QLHSSV_DHTTLL_Vuong\BUS\obj\Debug\BUS.dll
+D:\QLHSSV_DHTTLL_Vuong\BUS\obj\Debug\BUS.pdb
